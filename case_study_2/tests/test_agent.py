@@ -2,9 +2,9 @@ import pytest
 from ..email_action_agent import EmailAgent, mock_llm_parse_instruction
 
 def test_mock_llm_parse_instruction():
-    instruction = "Send an email to alice@example.com about the meeting at 2pm"
+    instruction = "Send an email to danielmuthama23@gmail.com about the meeting at 2pm"
     params = mock_llm_parse_instruction(instruction)
-    assert params['to'] == "alice@example.com"
+    assert params['to'] == "danielmuthama23@gmail.com"
     assert params['subject'] == "Automated Email"
     assert "meeting at 2pm" in params['body']
 
